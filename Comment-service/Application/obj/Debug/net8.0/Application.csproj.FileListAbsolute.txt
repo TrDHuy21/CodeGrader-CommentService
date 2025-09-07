@@ -19,3 +19,4 @@ D:\BÀI TẬP\C#\CodeGrader-CommentService\Comment-service\Application\bin\Debug
 D:\BÀI TẬP\C#\CodeGrader-CommentService\Comment-service\Application\obj\Debug\net8.0\Applicat.44B5EDA2.Up2Date
 D:\BÀI TẬP\C#\CodeGrader-CommentService\Comment-service\Application\bin\Debug\net8.0\Common.dll
 D:\BÀI TẬP\C#\CodeGrader-CommentService\Comment-service\Application\bin\Debug\net8.0\Common.pdb
+D:\BÀI TẬP\C#\CodeGrader-CommentService\Comment-service\Application\obj\Debug\net8.0\Application.sourcelink.json

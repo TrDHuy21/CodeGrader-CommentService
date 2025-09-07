@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\B\u00C0I T\u1EACP\\C#\\CodeGrader-CommentService\\Comment-service\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{57DBD98C-9684-4D22-875D-9AE2951858FF}|WebApi\\WebApi.csproj|d:\\b\u00E0i t\u1EADp\\c#\\codegrader-commentservice\\comment-service\\webapi\\appsettingsexample.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{57DBD98C-9684-4D22-875D-9AE2951858FF}|WebApi\\WebApi.csproj|solutionrelative:webapi\\appsettingsexample.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{57DBD98C-9684-4D22-875D-9AE2951858FF}|WebApi\\WebApi.csproj|d:\\b\u00E0i t\u1EADp\\c#\\codegrader-commentservice\\comment-service\\webapi\\controller\\commentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{57DBD98C-9684-4D22-875D-9AE2951858FF}|WebApi\\WebApi.csproj|solutionrelative:webapi\\controller\\commentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -21,10 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{57DBD98C-9684-4D22-875D-9AE2951858FF}|WebApi\\WebApi.csproj|d:\\b\u00E0i t\u1EADp\\c#\\codegrader-commentservice\\comment-service\\webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{57DBD98C-9684-4D22-875D-9AE2951858FF}|WebApi\\WebApi.csproj|solutionrelative:webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{57DBD98C-9684-4D22-875D-9AE2951858FF}|WebApi\\WebApi.csproj|d:\\b\u00E0i t\u1EADp\\c#\\codegrader-commentservice\\comment-service\\webapi\\appsettingsexample.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{57DBD98C-9684-4D22-875D-9AE2951858FF}|WebApi\\WebApi.csproj|solutionrelative:webapi\\appsettingsexample.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{57DBD98C-9684-4D22-875D-9AE2951858FF}|WebApi\\WebApi.csproj|d:\\b\u00E0i t\u1EADp\\c#\\codegrader-commentservice\\comment-service\\webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -74,7 +74,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -114,7 +114,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Comment.cs",
               "DocumentMoniker": "D:\\B\u00C0I T\u1EACP\\C#\\CodeGrader-CommentService\\Comment-service\\Domain\\Entities\\Comment.cs",
               "RelativeDocumentMoniker": "Domain\\Entities\\Comment.cs",
@@ -138,7 +138,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "CommentService.cs",
               "DocumentMoniker": "D:\\B\u00C0I T\u1EACP\\C#\\CodeGrader-CommentService\\Comment-service\\Application\\Service\\Implement\\CommentService.cs",
               "RelativeDocumentMoniker": "Application\\Service\\Implement\\CommentService.cs",
@@ -150,7 +150,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Result.cs",
               "DocumentMoniker": "D:\\B\u00C0I T\u1EACP\\C#\\CodeGrader-CommentService\\Comment-service\\Common\\Result.cs",
               "RelativeDocumentMoniker": "Common\\Result.cs",
@@ -162,28 +162,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "CommentController.cs",
               "DocumentMoniker": "D:\\B\u00C0I T\u1EACP\\C#\\CodeGrader-CommentService\\Comment-service\\WebApi\\Controller\\CommentController.cs",
               "RelativeDocumentMoniker": "WebApi\\Controller\\CommentController.cs",
               "ToolTip": "D:\\B\u00C0I T\u1EACP\\C#\\CodeGrader-CommentService\\Comment-service\\WebApi\\Controller\\CommentController.cs",
               "RelativeToolTip": "WebApi\\Controller\\CommentController.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAgwAkAAAAzAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-04T07:28:23.964Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "appsettingsExample.json",
               "DocumentMoniker": "D:\\B\u00C0I T\u1EACP\\C#\\CodeGrader-CommentService\\Comment-service\\WebApi\\appsettingsExample.json",
               "RelativeDocumentMoniker": "WebApi\\appsettingsExample.json",
               "ToolTip": "D:\\B\u00C0I T\u1EACP\\C#\\CodeGrader-CommentService\\Comment-service\\WebApi\\appsettingsExample.json",
               "RelativeToolTip": "WebApi\\appsettingsExample.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-09-04T08:56:50.714Z"
+              "WhenOpened": "2025-09-04T08:56:50.714Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -199,7 +200,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\B\u00C0I T\u1EACP\\C#\\CodeGrader-CommentService\\Comment-service\\WebApi\\Program.cs",
               "RelativeDocumentMoniker": "WebApi\\Program.cs",

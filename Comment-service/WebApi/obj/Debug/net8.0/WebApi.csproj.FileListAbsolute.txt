@@ -155,3 +155,4 @@ D:\BÀI TẬP\C#\CodeGrader-CommentService\Comment-service\WebApi\bin\Debug\net8
 D:\BÀI TẬP\C#\CodeGrader-CommentService\Comment-service\WebApi\bin\Debug\net8.0\Common.pdb
 D:\BÀI TẬP\C#\CodeGrader-CommentService\Comment-service\WebApi\obj\Debug\net8.0\WebApi.MvcApplicationPartsAssemblyInfo.cs
 D:\BÀI TẬP\C#\CodeGrader-CommentService\Comment-service\WebApi\bin\Debug\net8.0\appsettingsExample.json
+D:\BÀI TẬP\C#\CodeGrader-CommentService\Comment-service\WebApi\obj\Debug\net8.0\WebApi.sourcelink.json

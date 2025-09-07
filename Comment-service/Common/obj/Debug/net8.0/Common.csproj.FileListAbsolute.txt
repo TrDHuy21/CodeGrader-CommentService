@@ -12,3 +12,4 @@ D:\BÀI TẬP\C#\CodeGrader-CommentService\Comment-service\Common\obj\Debug\net8
 D:\BÀI TẬP\C#\CodeGrader-CommentService\Comment-service\Common\obj\Debug\net8.0\Common.pdb
 D:\BÀI TẬP\C#\CodeGrader-CommentService\Comment-service\Common\obj\Debug\net8.0\Common.genruntimeconfig.cache
 D:\BÀI TẬP\C#\CodeGrader-CommentService\Comment-service\Common\obj\Debug\net8.0\ref\Common.dll
+D:\BÀI TẬP\C#\CodeGrader-CommentService\Comment-service\Common\obj\Debug\net8.0\Common.sourcelink.json
