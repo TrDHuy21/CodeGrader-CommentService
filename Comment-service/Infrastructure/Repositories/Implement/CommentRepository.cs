@@ -12,28 +12,54 @@ namespace Infrastructure.Repositories.Implement
         }
         public override async Task<Comment> GetById(int id)
         {
-            return await _cMContext.Comment
-                .Include(c => c.Replies)
-                .Include(c => c.ParentComment)
-                .FirstOrDefaultAsync(c => c.Id == id);
+            var comment = await _cMContext.Comment.ToListAsync();
+
+            var lookup = comment.ToLookup(c => c.ParentCommentId);
+
+            Comment BuildTree(Comment c)
+            {
+                c.Replies = lookup[c.Id].Select(BuildTree).ToList();
+                return c;
+            }
+            var rootComment = comment.FirstOrDefault(c => c.Id == id);
+            return rootComment == null ? null : BuildTree(rootComment);
         }
 
         public async override Task<IEnumerable<Comment>> GetAllAsync()
         {
-            return await _cMContext.Comment
-                .Include(c => c.Replies)
-                .Include(c => c.ParentComment)
-                .Where(c => c.ParentCommentId == null)
-                .ToListAsync();
+            var comment = await _cMContext.Comment.ToListAsync();
+
+            Console.WriteLine(comment);
+
+            var lookup = comment.ToLookup(c => c.ParentCommentId);
+
+            List<Comment> BuildTree(int? parentId)
+            {
+                return lookup[parentId]
+                    .Select(c => { c.Replies = BuildTree(c.Id); return c; })
+                    .ToList();
+            }
+            return BuildTree(null);
         }
 
         public async Task<IEnumerable<Comment>> GetCommentByProblemId(int problemId)
         {
-            return await _cMContext.Comment
-                .Include(c => c.Replies)
-                .Include(c => c.ParentComment)
-                .Where(c => c.ProblemId == problemId && c.ParentCommentId == null)
-                .ToListAsync();
+            var comment = await _cMContext.Comment.ToListAsync();
+
+            var lookup = comment.ToLookup(c => c.ParentCommentId);
+
+            List<Comment> BuildTree(int? parentId)
+            {
+                return lookup[parentId]
+                    .Select(c => { c.Replies = BuildTree(c.Id); return c; })
+                    .ToList();            
+            }
+
+            var rootComments = comment.Where(c => c.ProblemId == problemId && c.ParentCommentId == null).ToList();
+
+            var CommentWithReplies = rootComments.Select(c => { c.Replies = BuildTree(c.Id); return c; }).ToList();
+
+            return CommentWithReplies;
         }
 
         public async Task<IEnumerable<Comment>> SortCommentByLike(int problemId)

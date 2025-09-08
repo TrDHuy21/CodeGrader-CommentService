@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Infrastructure.Migrations
 {
     [DbContext(typeof(CMContext))]
-    [Migration("20250905024009_init")]
+    [Migration("20250908030017_init")]
     partial class init
     {
         /// <inheritdoc />
@@ -60,6 +60,36 @@ namespace Infrastructure.Migrations
                     b.HasIndex("ParentCommentId");
 
                     b.ToTable("Comment", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            CommentText = "This is a sample comment.",
+                            CreatedAt = new DateTime(2025, 9, 8, 3, 0, 16, 336, DateTimeKind.Utc).AddTicks(47),
+                            Like = 10,
+                            ProblemId = 1,
+                            UserId = 1
+                        },
+                        new
+                        {
+                            Id = 2,
+                            CommentText = "This is a reply to the sample comment.",
+                            CreatedAt = new DateTime(2025, 9, 8, 3, 0, 16, 336, DateTimeKind.Utc).AddTicks(50),
+                            Like = 5,
+                            ParentCommentId = 1,
+                            ProblemId = 1,
+                            UserId = 2
+                        },
+                        new
+                        {
+                            Id = 3,
+                            CommentText = "Another top-level comment.",
+                            CreatedAt = new DateTime(2025, 9, 8, 3, 0, 16, 336, DateTimeKind.Utc).AddTicks(52),
+                            Like = 2,
+                            ProblemId = 1,
+                            UserId = 2
+                        });
                 });
 
             modelBuilder.Entity("Domain.Entities.Comment", b =>

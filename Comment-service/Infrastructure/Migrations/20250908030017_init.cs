@@ -3,6 +3,8 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
+#pragma warning disable CA1814 // Prefer jagged arrays over multidimensional
+
 namespace Infrastructure.Migrations
 {
     /// <inheritdoc />
@@ -33,6 +35,16 @@ namespace Infrastructure.Migrations
                         principalTable: "Comment",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
+                });
+
+            migrationBuilder.InsertData(
+                table: "Comment",
+                columns: new[] { "Id", "CommentText", "CreatedAt", "Like", "ParentCommentId", "ProblemId", "UserId" },
+                values: new object[,]
+                {
+                    { 1, "This is a sample comment.", new DateTime(2025, 9, 8, 3, 0, 16, 336, DateTimeKind.Utc).AddTicks(47), 10, null, 1, 1 },
+                    { 3, "Another top-level comment.", new DateTime(2025, 9, 8, 3, 0, 16, 336, DateTimeKind.Utc).AddTicks(52), 2, null, 1, 2 },
+                    { 2, "This is a reply to the sample comment.", new DateTime(2025, 9, 8, 3, 0, 16, 336, DateTimeKind.Utc).AddTicks(50), 5, 1, 1, 2 }
                 });
 
             migrationBuilder.CreateIndex(

@@ -49,19 +49,7 @@ namespace Application.Service.Implement
             {
                 parent = await _unitOfWork.CommentRepository.GetById(createCommentDto.ParentCommentId.Value);
                 if (parent == null)
-                    errors.Add(new ErrorField { Field = "ParentCommentId", errorMessage = "ParenComment id not found" });
-                else
-                {
-                    int level = 1;
-                    var temp = parent;
-                    while (temp.ParentCommentId.HasValue)
-                    {
-                        level++;
-                        temp = await _unitOfWork.CommentRepository.GetById(temp.ParentCommentId.Value);
-                    }
-                    if (level >= 2)
-                        errors.Add(new ErrorField { Field = "ParentCommentId", errorMessage = "Replies only allowed up to 2 levels" });
-                }
+                    errors.Add(new ErrorField { Field = "ParentCommentId", errorMessage = "ParenComment id not found" });            
             }
 
             if (errors.Any())

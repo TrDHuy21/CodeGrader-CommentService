@@ -42,7 +42,7 @@ namespace WebApi
             var jwt = builder.Configuration.GetSection("Jwt");
 
             // get key
-            var key = Encoding.UTF8.GetBytes(jwt["key"] ?? throw new InvalidOperationException("Key is missing"));
+            var key = Encoding.UTF8.GetBytes(jwt["Key"] ?? throw new InvalidOperationException("Key is missing"));
 
             // configuration jwt
             // dang ky dich vu xac thuc jwt
