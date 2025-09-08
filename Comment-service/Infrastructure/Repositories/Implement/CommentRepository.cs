@@ -29,8 +29,6 @@ namespace Infrastructure.Repositories.Implement
         {
             var comment = await _cMContext.Comment.ToListAsync();
 
-            Console.WriteLine(comment);
-
             var lookup = comment.ToLookup(c => c.ParentCommentId);
 
             List<Comment> BuildTree(int? parentId)
